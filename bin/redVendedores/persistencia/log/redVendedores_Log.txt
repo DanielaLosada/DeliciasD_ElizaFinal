@@ -176,3 +176,9 @@ oct 17, 2023 10:48:34 AM redVendedores.persistencia.ArchivoUtil guardarRegistroL
 ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-10-17
 oct 17, 2023 10:48:42 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
 INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: RaulR,2023-10-17
+nov 11, 2023 10:28:19 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-11-11
+nov 11, 2023 10:28:31 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-11
+nov 12, 2023 12:31:36 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-12
