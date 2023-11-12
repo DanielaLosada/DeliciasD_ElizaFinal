@@ -129,7 +129,7 @@
                </image>
             </ImageView>
             <Spinner fx:id="nroProductos" layoutX="211.0" layoutY="103.0" prefHeight="34.0" prefWidth="69.0" style="-fx-background-color: #F5f2ee; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);" />
-            <Button fx:id="btnAgregarC" layoutX="14.0" layoutY="663.0" mnemonicParsing="false" onAction="#ComprarEvent" prefHeight="46.0" prefWidth="225.0" style="-fx-background-color: #440404; -fx-background-radius: 30 30 30 30;" text="Agregar al carrito" textFill="WHITE">
+            <Button fx:id="btnAgregarC" layoutX="14.0" layoutY="663.0" mnemonicParsing="false" onAction="#agregarCEvent" prefHeight="46.0" prefWidth="225.0" style="-fx-background-color: #440404; -fx-background-radius: 30 30 30 30;" text="Agregar al carrito" textFill="WHITE">
                <font>
                   <Font name="Tw Cen MT" size="25.0" />
                </font>
@@ -139,12 +139,12 @@
                   <Image url="@../../imagenes/click-izquierdo.png" />
                </image>
             </ImageView>
-            <Label fx:id="txtNroProductosA" layoutX="1217.0" layoutY="14.0" text="(1)">
+            <Label fx:id="txtNroProductosC" layoutX="1217.0" layoutY="14.0">
                <font>
                   <Font name="Tw Cen MT Condensed Extra Bold" size="25.0" />
                </font>
             </Label>
-            <ImageView fitHeight="55.0" fitWidth="54.0" layoutX="1239.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="iconCarrito" fitHeight="55.0" fitWidth="54.0" layoutX="1239.0" layoutY="3.0" onMouseClicked="#irCarritoEvent" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../imagenes/compra.png" />
                </image>

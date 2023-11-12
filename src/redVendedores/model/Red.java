@@ -351,8 +351,8 @@ public class Red implements Serializable{
 		int total= 0;
 		for(Producto producto: listaProductos){
 			if(producto.getCodigo().equals(codigo)){
-				String precio = producto.getPrecio(); // La cadena que contiene el precio
-				precio = precio.replaceAll("[^0-9.]", ""); // Elimina todos los caracteres no numéricos, excepto el punto decimal
+				String precio = producto.getPrecio(); 
+				precio = precio.replaceAll("[^0-9.]", "");
 				total= newValue * (Integer.parseInt(precio));
 			}
 		}
@@ -377,6 +377,51 @@ public class Red implements Serializable{
 			}
 		}
 		return null;
+	}
+
+	public void agregarAlCarrito(Producto producto, String usuario) {
+		for (Cliente vendedor : listaClientes) {
+			if(vendedor.getUsuario().equals(usuario)){
+				vendedor.getListaProductos().add(producto);
+			}
+		}
+	}
+
+	public ArrayList<Producto> obtenerProductosCarrito(String usuario) {
+		for (Cliente vendedor : listaClientes) {
+			if(vendedor.getUsuario().equals(usuario)){
+				return vendedor.getListaProductos();
+			}
+		}
+		return null;
+	}
+
+	public String obtenerNroPC(String usuario) {
+		for (Cliente vendedor : listaClientes) {
+			if(vendedor.getUsuario().equals(usuario)){
+				String numero= Integer.toString(vendedor.getListaProductos().size());
+				return numero;
+			}
+		}
+		return null;
+	}
+
+	public String obtenerPrecio(String usuario) {
+		for (Cliente vendedor : listaClientes) {
+			if(vendedor.getUsuario().equals(usuario)){
+				String numero= Integer.toString(vendedor.obtenerPrecio());
+				return numero;
+			}
+		}
+		return null;
+	}
+
+	public void eliminarProductoCarrio(Producto producto, String usuario) {
+		for (Cliente vendedor : listaClientes) {
+			if(vendedor.getUsuario().equals(usuario)){
+				vendedor.eliminarProducto(producto);
+			}
+		}
 	}
 	
 	

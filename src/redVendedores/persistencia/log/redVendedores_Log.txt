@@ -182,3 +182,69 @@ nov 11, 2023 10:28:31 PM redVendedores.persistencia.ArchivoUtil guardarRegistroL
 INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-11
 nov 12, 2023 12:31:36 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
 INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-12
+nov 12, 2023 9:55:19 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-11-12
+nov 12, 2023 9:55:33 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 9:56:28 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 9:58:35 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 1:02:03 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:01:35 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:07:06 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:12:25 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-11-12
+nov 12, 2023 3:12:36 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:20:30 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:28:09 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:29:23 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:31:11 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:32:53 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:36:35 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:40:53 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:44:34 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-11-12
+nov 12, 2023 3:44:43 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:46:50 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:50:04 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:51:54 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:53:05 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:55:09 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 3:59:49 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 4:07:39 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 4:43:05 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 4:44:10 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 4:47:22 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 4:50:13 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 4:58:15 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 5:00:40 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 5:05:56 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 5:07:13 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12

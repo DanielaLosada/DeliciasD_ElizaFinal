@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane onMousePressed="#click" prefHeight="193.0" prefWidth="429.0" stylesheets="@../../values/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="redVendedores.controllers.ProductoController">
+<AnchorPane onMousePressed="#click" prefHeight="193.0" prefWidth="429.0" stylesheets="@../../values/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="redVendedores.controllers.ProductoCarritoController">
    <children>
       <ImageView fx:id="imagen" fitHeight="133.0" fitWidth="128.0" layoutX="23.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" />
       <TextField fx:id="txtNombreProducto" alignment="CENTER" layoutX="7.0" prefHeight="47.0" prefWidth="219.0" promptText="Nombre Producto" style="-fx-background-color: rgba(0,0,0,0); -fx-text-fill: #943131; -fx-border-radius: 50%; -fx-background-radius: 50%;">

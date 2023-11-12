@@ -3,6 +3,8 @@ package redVendedores.controllers;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
+
+import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import redVendedores.exceptions.VendedorException;
 import redVendedores.model.Administrador;
@@ -507,6 +509,26 @@ public class ModelFactoryController {
 
 	public Image traerFoto(String usuario) {
 		return red.traerFoto(usuario);
+	}
+
+	public void agregarAlCarrito(Producto producto, String usuario) {
+		red.agregarAlCarrito(producto,usuario);
+	}
+
+	public ArrayList<Producto> obtenerProductosCarrito(String usuario) {
+		return red.obtenerProductosCarrito(usuario);
+	}
+
+	public String obtenerNroPC(String usuario) {
+		return red.obtenerNroPC(usuario);
+	}
+
+	public String obtenerPrecio(String usuario) {
+		return red.obtenerPrecio(usuario);
+	}
+
+	public void eliminarPCarrito(Producto producto, String usuario) {
+		red.eliminarProductoCarrio(producto, usuario);
 	}
 	
 

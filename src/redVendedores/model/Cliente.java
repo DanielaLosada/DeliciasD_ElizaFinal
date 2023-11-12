@@ -3,12 +3,7 @@ package redVendedores.model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-
-import javax.swing.JOptionPane;
-
 import javafx.scene.image.Image;
-import redVendedores.exceptions.MeGustaException;
-import redVendedores.exceptions.ProductoException;
 
 public class Cliente implements Serializable {
 	
@@ -24,8 +19,8 @@ public class Cliente implements Serializable {
 	private String usuario;
 	private String contrasenia;
 	public ArrayList<Producto>listaProductos = new ArrayList<>();
-	private ArrayList<Cliente> listaAmigos= new ArrayList<>();
-	private ArrayList<Cliente> listaSolicitudesP= new ArrayList<>();
+//	private ArrayList<Cliente> listaAmigos= new ArrayList<>();
+//	private ArrayList<Cliente> listaSolicitudesP= new ArrayList<>();
 	private Image imagen;
 	
 	/*
@@ -33,8 +28,7 @@ public class Cliente implements Serializable {
 	 */
 	
 	public Cliente(String nombre, String apellidos, String documento, String direccion, String correo, String usuario,
-			String contrasenia, ArrayList<Producto> listaProductos, ArrayList<Cliente> listaAmigos,
-			ArrayList<Cliente> listaSolicitudesP, Image imagen) {
+			String contrasenia, ArrayList<Producto> listaProductos, Image imagen) {
 		super();
 		this.nombre = nombre;
 		this.apellidos = apellidos;
@@ -44,8 +38,6 @@ public class Cliente implements Serializable {
 		this.usuario = usuario;
 		this.contrasenia = contrasenia;
 		this.listaProductos = listaProductos;
-		this.listaAmigos = listaAmigos;
-		this.listaSolicitudesP = listaSolicitudesP;
 		this.imagen = imagen;
 	}
 
@@ -107,23 +99,6 @@ public class Cliente implements Serializable {
 	public void setListaProductos(ArrayList<Producto> listaProductos) {
 		this.listaProductos = listaProductos;
 	}
-	
-	public ArrayList<Cliente> getListaAmigos() {
-		return listaAmigos;
-	}
-
-	public void setListaAmigos(ArrayList<Cliente> listaAmigos) {
-		this.listaAmigos = listaAmigos;
-	}
-
-	public ArrayList<Cliente> getListaSolicitudesP() {
-		return listaSolicitudesP;
-	}
-
-	public void setListaSolicitudesP(ArrayList<Cliente> listaSolicitudesP) {
-		this.listaSolicitudesP = listaSolicitudesP;
-	}
-	
 	
 	public String getCorreo() {
 		return correo;
@@ -207,6 +182,24 @@ public class Cliente implements Serializable {
 			return true;
 		}
 		return false;
+	}
+
+	public int obtenerPrecio() {
+		int precioT= 0;
+		for (Producto producto : listaProductos) {
+			String precio = producto.getPrecio(); 
+			precio = precio.replaceAll("[^0-9.]", "");
+			precioT+= Integer.parseInt(precio);
+		}
+		return precioT;
+	}
+
+	public void eliminarProducto(Producto product) {
+		for (Producto producto : listaProductos) {
+			if(producto.getCodigo().equals(product.getCodigo())){
+				listaProductos.remove(producto);
+			}
+		}
 	}
 	
 //	/*

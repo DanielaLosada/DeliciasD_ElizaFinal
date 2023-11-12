@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import redVendedores.controllers.CarritoController;
 import redVendedores.controllers.FacturaController;
 import redVendedores.controllers.IniciarRedController;
 import redVendedores.controllers.LoginAdministradorController;
@@ -253,6 +254,25 @@ import redVendedores.model.Red;
 
 			RestablecerContrasenaAdminController restablecerContrasenaAdminController = loader.getController();
 			restablecerContrasenaAdminController.setAplicacion(this);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void mostrarVentanaCarrito(String documento, String correo){
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("../views/Carrito.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			CarritoController carritoController = loader.getController();
+			carritoController.setAplicacion(this, documento, correo);
 
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
