@@ -1,0 +1,182 @@
+oct 12, 2023 7:58:07 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 8:00:10 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 8:00:50 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 8:01:46 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 8:10:57 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 8:14:15 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 8:17:54 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 8:20:06 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 8:26:16 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 8:30:32 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-10-12
+oct 12, 2023 8:30:41 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 9:19:54 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 9:21:38 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 9:24:30 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 9:26:16 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 9:28:28 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 9:29:05 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 9:29:57 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 9:32:10 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 9:33:13 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 9:34:10 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 11:06:14 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: crear vendedor,Se ha creado un nuevo vendedor en la red 132135,2023-10-12
+oct 12, 2023 11:06:32 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: Daniela,2023-10-12
+oct 12, 2023 11:31:39 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 11:32:32 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 12, 2023 11:34:08 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-12
+oct 13, 2023 11:59:19 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-13
+oct 13, 2023 11:59:50 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-13
+oct 13, 2023 12:04:14 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-13
+oct 16, 2023 11:31:39 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 11:40:40 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 11:49:32 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 11:49:54 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 11:52:07 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: crear vendedor,Se ha creado un nuevo vendedor en la red 165468,2023-10-16
+oct 16, 2023 11:52:23 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: Daniela,2023-10-16
+oct 16, 2023 11:54:03 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 11:54:48 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 11:55:53 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: crear vendedor,Se ha creado un nuevo vendedor en la red 79797,2023-10-16
+oct 16, 2023 11:56:05 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: Daniela,2023-10-16
+oct 16, 2023 12:22:47 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-10-16
+oct 16, 2023 12:22:51 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:23:45 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: crear vendedor,Se ha creado un nuevo vendedor en la red 109383,2023-10-16
+oct 16, 2023 12:24:00 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: Daniela,2023-10-16
+oct 16, 2023 12:24:27 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:25:33 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:26:29 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:26:51 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:27:40 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:28:16 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:29:28 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: crear vendedor,Se ha creado un nuevo vendedor en la red 4803839,2023-10-16
+oct 16, 2023 12:29:46 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: Daniela,2023-10-16
+oct 16, 2023 12:31:41 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:32:55 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:34:39 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:35:58 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: Angelica,2023-10-16
+oct 16, 2023 12:36:53 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: Angelica,2023-10-16
+oct 16, 2023 12:38:34 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:38:47 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: Angelica,2023-10-16
+oct 16, 2023 12:39:48 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:40:11 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:40:40 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:40:59 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:41:26 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:42:41 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:45:04 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 12:53:24 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 1:10:15 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 1:32:45 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: crear vendedor,Se ha creado un nuevo vendedor en la red 1092455518,2023-10-16
+oct 16, 2023 1:34:00 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: Daniela,2023-10-16
+oct 16, 2023 1:36:24 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: juan,2023-10-16
+oct 16, 2023 6:16:04 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-10-16
+oct 16, 2023 6:31:10 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-10-16
+oct 16, 2023 6:34:10 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: Angelica,2023-10-16
+oct 16, 2023 6:37:52 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: crear vendedor,Se ha creado un nuevo vendedor en la red 231354,2023-10-16
+oct 16, 2023 6:38:50 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: Daniela,2023-10-16
+oct 16, 2023 6:44:00 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-10-16
+oct 16, 2023 6:44:24 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-10-16
+oct 16, 2023 6:46:24 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: crear vendedor,Se ha creado un nuevo vendedor en la red 7879846,2023-10-16
+oct 16, 2023 6:46:56 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: Fede,2023-10-16
+oct 17, 2023 9:55:37 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-10-17
+oct 17, 2023 9:56:29 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-10-17
+oct 17, 2023 9:56:34 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-10-17
+oct 17, 2023 9:56:54 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-10-17
+oct 17, 2023 9:57:04 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-10-17
+oct 17, 2023 9:57:36 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-10-17
+oct 17, 2023 9:57:47 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-10-17
+oct 17, 2023 10:45:42 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: crear vendedor,Se ha creado un nuevo vendedor en la red 109273692,2023-10-17
+oct 17, 2023 10:48:34 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-10-17
+oct 17, 2023 10:48:42 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: RaulR,2023-10-17
+nov 11, 2023 10:28:19 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-11-11
+nov 11, 2023 10:28:31 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-11
