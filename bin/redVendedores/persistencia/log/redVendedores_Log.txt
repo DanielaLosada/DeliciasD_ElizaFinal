@@ -244,3 +244,17 @@ nov 12, 2023 4:58:15 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLo
 INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
 nov 12, 2023 5:00:40 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
 INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 5:05:56 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 5:07:13 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-12
+nov 12, 2023 10:00:53 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-12
+nov 12, 2023 10:09:16 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-12
+nov 12, 2023 10:14:22 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-12
+nov 12, 2023 10:16:31 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-12
+nov 12, 2023 10:21:56 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-12
