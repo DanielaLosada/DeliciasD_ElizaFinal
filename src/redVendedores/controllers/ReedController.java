@@ -157,17 +157,18 @@ public class ReedController {
 	void ComprarEvent(ActionEvent event) {
 		int num = nroProductos.getValue();
 		totalPrecio = modelFactoryController.calcularTotal(num, productoSeleccionado.getCodigo());
-		String opcionSeleccionada = "";
-		String[] botones = { "Nequi", "Tarjeta Debito/Credito", "PSE" };
-		int variable = JOptionPane.showOptionDialog(null, "¿Por qué medio desea realizar su pago?", "Metodos de pago",
-				JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, botones, botones[0]);
-		if (variable >= 0 && variable < botones.length) {
-			opcionSeleccionada = botones[variable];
-			System.out.println("Hola");
-		}
-		enviarCorreo(correo);
-		aplicacion.mostrarVentanaFactura(totalPrecio, opcionSeleccionada, productoSeleccionado.getNombre(), num);
-
+//		String opcionSeleccionada = "";
+//		String[] botones = { "Nequi", "Tarjeta Debito/Credito", "PSE" };
+//		int variable = JOptionPane.showOptionDialog(null, "¿Por qué medio desea realizar su pago?", "Metodos de pago",
+//				JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.INFORMATION_MESSAGE, null, botones, botones[0]);
+//		if (variable >= 0 && variable < botones.length) {
+//			opcionSeleccionada = botones[variable];
+//			System.out.println("Hola");
+//		}
+//		enviarCorreo(correo);
+//		aplicacion.mostrarVentanaFactura(totalPrecio, opcionSeleccionada, productoSeleccionado.getNombre(), num);
+		
+		aplicacion.mostrarVentanaCompra(usuario, correo, num, Integer.toString(totalPrecio));
 	}
 
 	private void enviarCorreo(String destinatario) {

@@ -46,9 +46,7 @@ public class IniciarRedController {
     	});
 
     }
-
-
-
+    
     public void setAplicacion(Aplicacion aplicacion) {
 		this.aplicacion = aplicacion;
 

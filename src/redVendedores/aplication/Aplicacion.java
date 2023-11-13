@@ -9,17 +9,21 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import redVendedores.controllers.CarritoController;
+import redVendedores.controllers.CompraController;
 import redVendedores.controllers.FacturaController;
 import redVendedores.controllers.IniciarRedController;
 import redVendedores.controllers.LoginAdministradorController;
 import redVendedores.controllers.LoginVendedorController;
 import redVendedores.controllers.NuevoVendedorController;
+import redVendedores.controllers.PagoPSEController;
+import redVendedores.controllers.PagoTarjetasController;
 import redVendedores.controllers.RedPrincipalAdminController;
 import redVendedores.controllers.ReedController;
 import redVendedores.controllers.RestablecerContrasena2AdminController;
 import redVendedores.controllers.RestablecerContrasena2Controller;
 import redVendedores.controllers.RestablecerContrasenaAdminController;
 import redVendedores.controllers.RestablecerContrasenaController;
+import redVendedores.model.Producto;
 import redVendedores.model.Red;
 
 
@@ -282,6 +286,64 @@ import redVendedores.model.Red;
 			e.printStackTrace();
 		}
 	}
+	
+	public void mostrarVentanaCompra(String usuario, String correo, int num, String precio){
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("../views/Compra.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			CompraController compraController = loader.getController();
+			compraController.setAplicacion(this, usuario, correo, num, precio);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void mostrarVentanaPagoTarjetas(){
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("../views/PagoTarjetas.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			PagoTarjetasController pagoTarjetasController = loader.getController();
+			pagoTarjetasController.setAplicacion(this);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void mostrarVentanaPagoPSE(){
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("../views/pagoPSE.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			PagoPSEController pagoPSEController = loader.getController();
+			pagoPSEController.setAplicacion(this);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
 
 
 

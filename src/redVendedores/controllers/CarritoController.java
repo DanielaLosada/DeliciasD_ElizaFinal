@@ -76,7 +76,7 @@ public class CarritoController {
 
 	@FXML
 	void ComprarEvent(ActionEvent event) {
-
+		aplicacion.mostrarVentanaCompra(usuario, correo, productos.size(), txtPrecio.getText());
 	}
 	
 	@FXML
