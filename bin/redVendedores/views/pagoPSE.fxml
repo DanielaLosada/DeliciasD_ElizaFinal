@@ -26,23 +26,23 @@
                   <Image url="@../../imagenes/nequi.png" />
                </image>
             </ImageView>
-            <TextField layoutX="108.0" layoutY="229.0" prefHeight="40.0" prefWidth="287.0" promptText="Número de celular" style="-fx-background-color: #f5f2ee; -fx-prompt-text-fill: #000000;">
+            <TextField fx:id="txtNequiNroCel" layoutX="108.0" layoutY="229.0" prefHeight="40.0" prefWidth="287.0" promptText="Número de celular" style="-fx-background-color: #f5f2ee; -fx-prompt-text-fill: #000000;">
                <font>
                   <Font name="Arial" size="16.0" />
                </font>
             </TextField>
-            <PasswordField layoutX="108.0" layoutY="283.0" prefHeight="40.0" prefWidth="287.0" promptText="Clave" style="-fx-prompt-text-fill: #000000; -fx-background-color: #f5f2ee;" />
+            <PasswordField fx:id="claveNequi" layoutX="108.0" layoutY="283.0" prefHeight="40.0" prefWidth="287.0" promptText="Clave" style="-fx-prompt-text-fill: #000000; -fx-background-color: #f5f2ee;" />
             <ImageView fitHeight="80.0" fitWidth="287.0" layoutX="108.0" layoutY="333.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../imagenes/czap.png" />
                </image>
             </ImageView>
-            <Button layoutX="123.0" layoutY="428.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="257.0" style="-fx-background-color: #DA0081;" text="Entra" textFill="WHITE">
+            <Button fx:id="btnEntrar" layoutX="123.0" layoutY="428.0" mnemonicParsing="false" onAction="#entrarEvent" prefHeight="31.0" prefWidth="257.0" style="-fx-background-color: #DA0081;" text="Entra" textFill="WHITE">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>
             </Button>
-            <Button layoutX="123.0" layoutY="475.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="257.0" style="-fx-background-color: #ffffff; -fx-border-color: #200020;" text="Ahora no" textFill="#200020">
+            <Button fx:id="btnNequiNo" layoutX="123.0" layoutY="475.0" mnemonicParsing="false" onAction="#nequiNoEvent" prefHeight="31.0" prefWidth="257.0" style="-fx-background-color: #ffffff; -fx-border-color: #200020;" text="Ahora no" textFill="#200020">
                <font>
                   <Font name="Arial" size="20.0" />
                </font>
@@ -83,22 +83,22 @@
                         <Image url="@../../imagenes/imagemsi.png" />
                      </image>
                   </ImageView>
-                  <Button layoutX="130.0" layoutY="474.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: #ff0000; -fx-background-radius: 30 30 30 30;" text="Continuar" textFill="WHITE">
+                  <Button fx:id="btnContinuarDavi" layoutX="130.0" layoutY="474.0" mnemonicParsing="false" onAction="#continuarDaviEvent" prefHeight="51.0" prefWidth="242.0" style="-fx-background-color: #ff0000; -fx-background-radius: 30 30 30 30;" text="Continuar" textFill="WHITE">
                      <font>
                         <Font name="Arial" size="21.0" />
                      </font>
                   </Button>
-                  <Button layoutX="126.0" layoutY="548.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="251.0" style="-fx-background-color: #ff0000; -fx-background-radius: 30 30 30 30;" text="Cancelar" textFill="WHITE">
+                  <Button fx:id="btnCancelarDavi" layoutX="126.0" layoutY="548.0" mnemonicParsing="false" onAction="#cancelarDaviEvent" prefHeight="51.0" prefWidth="251.0" style="-fx-background-color: #ff0000; -fx-background-radius: 30 30 30 30;" text="Cancelar" textFill="WHITE">
                      <font>
                         <Font name="Arial" size="21.0" />
                      </font>
                   </Button>
-                  <TextField fx:id="txtNombre1" layoutX="67.0" layoutY="380.0" prefHeight="38.0" prefWidth="350.0" promptText="Número de documento" style="-fx-background-color: transparent; -fx-border-color: #eeeeee; -fx-border-width: 0 0 1 0;">
+                  <TextField fx:id="txtDocumentoDavi" layoutX="67.0" layoutY="380.0" prefHeight="38.0" prefWidth="350.0" promptText="Número de documento" style="-fx-background-color: transparent; -fx-border-color: #eeeeee; -fx-border-width: 0 0 1 0;">
                      <font>
                         <Font name="Tw Cen MT" size="21.0" />
                      </font>
                   </TextField>
-                  <ComboBox layoutX="70.0" layoutY="317.0" prefHeight="32.0" prefWidth="344.0" promptText="Cédula de Ciudadania" style="-fx-background-color: transparent; -fx-border-width: 0 0 1 0; -fx-border-color: #eeeeee; -fx-prompt-text-fill: #eeeeee; -fx-font-family: Tw Cen MT;" />
+                  <ComboBox fx:id="comboBoxDocumentoDavi" layoutX="70.0" layoutY="317.0" prefHeight="32.0" prefWidth="344.0" promptText="Cédula de Ciudadania" style="-fx-background-color: transparent; -fx-border-width: 0 0 1 0; -fx-border-color: #eeeeee; -fx-prompt-text-fill: #eeeeee; -fx-font-family: Tw Cen MT;" />
                   <AnchorPane fx:id="TAPA" layoutX="-41.0" layoutY="-15.0" prefHeight="665.0" prefWidth="566.0" style="-fx-background-color: #ffffff;" />
                </children>
             </AnchorPane>

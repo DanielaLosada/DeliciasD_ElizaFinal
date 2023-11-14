@@ -7,15 +7,24 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import redVendedores.controllers.CarritoController;
 import redVendedores.controllers.CompraController;
+import redVendedores.controllers.Daviplata2Controller;
+import redVendedores.controllers.Daviplata3Controller;
+import redVendedores.controllers.Daviplata4Controller;
 import redVendedores.controllers.FacturaController;
 import redVendedores.controllers.IniciarRedController;
 import redVendedores.controllers.LoginAdministradorController;
 import redVendedores.controllers.LoginVendedorController;
+import redVendedores.controllers.Nequi2Controller;
+import redVendedores.controllers.Nequi3Controller;
+import redVendedores.controllers.Nequi4Controller;
+import redVendedores.controllers.Nequi5Controller;
 import redVendedores.controllers.NuevoVendedorController;
 import redVendedores.controllers.PagoPSEController;
+import redVendedores.controllers.PagoRechazadoController;
 import redVendedores.controllers.PagoTarjetasController;
 import redVendedores.controllers.RedPrincipalAdminController;
 import redVendedores.controllers.ReedController;
@@ -23,7 +32,6 @@ import redVendedores.controllers.RestablecerContrasena2AdminController;
 import redVendedores.controllers.RestablecerContrasena2Controller;
 import redVendedores.controllers.RestablecerContrasenaAdminController;
 import redVendedores.controllers.RestablecerContrasenaController;
-import redVendedores.model.Producto;
 import redVendedores.model.Red;
 
 
@@ -325,7 +333,7 @@ import redVendedores.model.Red;
 		}
 	}
 	
-	public void mostrarVentanaPagoPSE(){
+	public void mostrarVentanaPagoPSE(String precio, String correo, String usuario){
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Aplicacion.class.getResource("../views/pagoPSE.fxml"));
@@ -333,7 +341,159 @@ import redVendedores.model.Red;
 			AnchorPane rootLayout = (AnchorPane)loader.load();
 
 			PagoPSEController pagoPSEController = loader.getController();
-			pagoPSEController.setAplicacion(this);
+			pagoPSEController.setAplicacion(this, precio,correo, usuario);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void mostrarVentanaDaviplata2(String precio, String correo, String usuario){
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("../views/Daviplata2.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			Daviplata2Controller daviplata2Controller = loader.getController();
+			daviplata2Controller.setAplicacion(this,precio, correo, usuario);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void mostrarVentanaDaviplata3(){
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("../views/Daviplata3.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			Daviplata3Controller daviplata3Controller = loader.getController();
+			daviplata3Controller.setAplicacion(this);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void mostrarVentanaDaviplata4(){
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("../views/Daviplata4.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			Daviplata4Controller daviplata4Controller = loader.getController();
+			daviplata4Controller.setAplicacion(this);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void mostrarVentanaNequi2(String precio, String correo, String usuario){
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("../views/Nequi2.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			Nequi2Controller nequi2Controller = loader.getController();
+			nequi2Controller.setAplicacion(this, precio,correo, usuario);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void mostrarVentanaNequi3(String precio, String correo, String usuario){
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("../views/Nequi3.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			Nequi3Controller nequi3Controller = loader.getController();
+			nequi3Controller.setAplicacion(this,precio, correo, usuario);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void mostrarVentanaNequi4(String precio, String codigo, String correo, String usuario){
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("../views/Nequi4.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			Nequi4Controller nequi4Controller = loader.getController();
+			nequi4Controller.setAplicacion(this,precio,codigo, correo, usuario);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void mostrarVentanaNequi5(String precio){
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("../views/Nequi5.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			Nequi5Controller nequi5Controller = loader.getController();
+			nequi5Controller.setAplicacion(this,precio);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void mostrarVentanaPagoRechazado(String precio, String fecha, String banco, String usuario, String correo){
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("../views/PagoRechazado.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			PagoRechazadoController pagoRechazadoController = loader.getController();
+			pagoRechazadoController.setAplicacion(this,precio,fecha,banco, usuario, correo);
 
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);

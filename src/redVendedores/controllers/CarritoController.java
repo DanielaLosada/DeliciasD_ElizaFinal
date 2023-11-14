@@ -22,7 +22,6 @@ import redVendedores.model.MyListener;
 import redVendedores.model.Producto;
 
 public class CarritoController {
-	
 	@FXML
 	private ResourceBundle resources;
 
@@ -86,7 +85,6 @@ public class CarritoController {
 		comboBoxZonaEnvio.getItems().addAll("Centro", "Norte", "Sur");
 		comboBoxZonaEnvio.setOnAction(this::filtrarEnvio);
 	}
-	
 	
 	public void setAplicacion(Aplicacion aplicacion, String usuario, String correo) {
 		this.aplicacion = aplicacion;

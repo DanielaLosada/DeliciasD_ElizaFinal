@@ -8,15 +8,14 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="511.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="511.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="redVendedores.controllers.PagoRechazadoController">
    <children>
       <ImageView fitHeight="112.0" fitWidth="430.0" layoutX="78.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../imagenes/pio.png" />
          </image>
       </ImageView>
-      <Label layoutX="218.0" layoutY="148.0" text="\$35.000">
+      <Label fx:id="monto" layoutX="218.0" layoutY="148.0" text="\$35.000">
          <font>
             <Font name="Arial Bold" size="21.0" />
          </font>
@@ -70,7 +69,7 @@
             <Font name="Arial" size="16.0" />
          </font>
       </Text>
-      <Text layoutX="385.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PSE">
+      <Text fx:id="medioPago" layoutX="385.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PSE">
          <font>
             <Font name="Arial" size="16.0" />
          </font>
@@ -80,12 +79,12 @@
             <Font name="Arial" size="16.0" />
          </font>
       </Text>
-      <Label fx:id="timeLabel" layoutX="314.0" layoutY="318.0" prefHeight="28.0" prefWidth="142.0" text="13 de Noviembre">
+      <Label fx:id="fecha" layoutX="314.0" layoutY="318.0" prefHeight="28.0" prefWidth="142.0" text="13 de Noviembre">
          <font>
             <Font name="Arial" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="timeLabel1" layoutX="355.0" layoutY="288.0" prefHeight="28.0" prefWidth="89.0" text="232394984">
+      <Label fx:id="nroTrans" layoutX="355.0" layoutY="288.0" prefHeight="28.0" prefWidth="89.0" text="232394984">
          <font>
             <Font name="Arial" size="16.0" />
          </font>
@@ -95,7 +94,7 @@
             <Font name="Arial" size="16.0" />
          </font>
       </Text>
-      <Text layoutX="374.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEQUI">
+      <Text fx:id="banco" layoutX="374.0" layoutY="476.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NEQUI">
          <font>
             <Font name="Arial" size="16.0" />
          </font>
@@ -109,7 +108,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <Label layoutX="303.0" layoutY="564.0" text="\$35.000">
+      <Label fx:id="total" layoutX="303.0" layoutY="564.0" text="\$35.000">
          <font>
             <Font name="Arial Bold" size="21.0" />
          </font>
@@ -119,7 +118,7 @@
             <Font name="Arial Bold" size="24.0" />
          </font>
       </Text>
-      <Button fx:id="btnIngresar" layoutX="211.0" layoutY="613.0" mnemonicParsing="false" onAction="#ingresarEvent" prefHeight="20.0" prefWidth="89.0" style="-fx-background-color: #440404; -fx-background-radius: 30 30 30 30;" text="Cerrar" textFill="WHITE">
+      <Button fx:id="btnCerrar" layoutX="211.0" layoutY="613.0" mnemonicParsing="false" onAction="#cerrarEvent" prefHeight="20.0" prefWidth="89.0" style="-fx-background-color: #440404; -fx-background-radius: 30 30 30 30;" text="Cerrar" textFill="WHITE">
          <font>
             <Font name="Tw Cen MT" size="19.0" />
          </font>

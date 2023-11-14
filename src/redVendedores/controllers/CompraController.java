@@ -15,7 +15,6 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import redVendedores.aplication.Aplicacion;
-import redVendedores.model.Producto;
 
 public class CompraController {
 
@@ -89,7 +88,7 @@ public class CompraController {
 					if (textoDelRadioButton.equals("Tarjeta de crédito") || textoDelRadioButton.equals("Tarjeta de débito")) {
 						aplicacion.mostrarVentanaPagoTarjetas();
 					} else {
-						aplicacion.mostrarVentanaPagoPSE();
+						aplicacion.mostrarVentanaPagoPSE(txtTotal.getText(), correo, usuario);
 					}
 				}else{
 					JOptionPane.showMessageDialog(null, "Debe seleccionar una opción para poder continuar");

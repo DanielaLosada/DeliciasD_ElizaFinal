@@ -7,8 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="502.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="502.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="redVendedores.controllers.Nequi3Controller">
    <children>
       <ImageView fitHeight="182.0" fitWidth="261.0" layoutX="121.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -40,12 +39,12 @@
             <Font name="Arial" size="18.0" />
          </font>
       </Text>
-      <Button layoutX="79.0" layoutY="440.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="344.0" style="-fx-background-color: #DA0081;" text="Pide un código por correo" textFill="WHITE">
+      <Button fx:id="btnPedirCodigo" layoutX="79.0" layoutY="440.0" mnemonicParsing="false" onAction="#pedirCodigoEvent" prefHeight="42.0" prefWidth="344.0" style="-fx-background-color: #DA0081;" text="Pide un código por correo" textFill="WHITE">
          <font>
             <Font name="Arial" size="22.0" />
          </font>
       </Button>
-      <Button layoutX="81.0" layoutY="498.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="344.0" style="-fx-background-color: #ffffff; -fx-border-color: #200020;" text="Cancela" textFill="#200020">
+      <Button fx:id="btnCancelar" layoutX="81.0" layoutY="498.0" mnemonicParsing="false" onAction="#cancelarEvent" prefHeight="42.0" prefWidth="344.0" style="-fx-background-color: #ffffff; -fx-border-color: #200020;" text="Cancela" textFill="#200020">
          <font>
             <Font name="Arial" size="20.0" />
          </font>

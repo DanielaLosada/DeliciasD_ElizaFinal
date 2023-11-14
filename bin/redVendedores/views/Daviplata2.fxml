@@ -9,8 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="502.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="redVendedores.controllers.Daviplata2Controller">
    <children>
       <AnchorPane prefHeight="98.0" prefWidth="502.0" style="-fx-background-color: #ff0000;">
          <children>
@@ -24,12 +23,12 @@
                   <Font name="Arial" size="16.0" />
                </font>
             </Text>
-            <Text fill="WHITE" layoutX="85.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Martes 14 de Noviembre de 2023,">
+            <Text fx:id="fecha" fill="WHITE" layoutX="85.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Martes 14 de Noviembre de 2023,">
                <font>
                   <Font name="Arial" size="16.0" />
                </font>
             </Text>
-            <Label fx:id="timeLabel" layoutX="335.0" layoutY="45.0" prefHeight="28.0" prefWidth="89.0" text="14:29 PM" textFill="WHITE">
+            <Label fx:id="hora" layoutX="335.0" layoutY="45.0" prefHeight="28.0" prefWidth="89.0" text="14:29 PM" textFill="WHITE">
                <font>
                   <Font name="Arial" size="16.0" />
                </font>
@@ -41,17 +40,17 @@
             <Image url="@../../imagenes/olip.png" />
          </image>
       </ImageView>
-      <Button layoutX="53.0" layoutY="494.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: #ff0000; -fx-background-radius: 30 30 30 30;" text="Efectuar pago" textFill="WHITE">
+      <Button fx:id="btnEfectuar" layoutX="53.0" layoutY="494.0" mnemonicParsing="false" onAction="#efectuarEvent" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: #ff0000; -fx-background-radius: 30 30 30 30;" text="Efectuar pago" textFill="WHITE">
          <font>
             <Font name="Arial" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="276.0" layoutY="494.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: #ff0000; -fx-background-radius: 30 30 30 30;" text="Cancelar" textFill="WHITE">
+      <Button fx:id="btnCancelar" layoutX="276.0" layoutY="494.0" mnemonicParsing="false" onAction="#cancelarEvent" prefHeight="44.0" prefWidth="190.0" style="-fx-background-color: #ff0000; -fx-background-radius: 30 30 30 30;" text="Cancelar" textFill="WHITE">
          <font>
             <Font name="Arial" size="18.0" />
          </font>
       </Button>
-      <TextField fx:id="txtNombre1" layoutX="57.0" layoutY="315.0" prefHeight="38.0" prefWidth="377.0" promptText="Código" style="-fx-background-color: transparent; -fx-border-color: #eeeeee; -fx-border-width: 0 0 1 0;">
+      <TextField fx:id="txtCodigo" layoutX="57.0" layoutY="315.0" prefHeight="38.0" prefWidth="377.0" promptText="Código" style="-fx-background-color: transparent; -fx-border-color: #eeeeee; -fx-border-width: 0 0 1 0;">
          <font>
             <Font name="Tw Cen MT" size="21.0" />
          </font>
