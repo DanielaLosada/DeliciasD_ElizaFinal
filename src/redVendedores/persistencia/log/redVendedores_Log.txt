@@ -310,3 +310,7 @@ nov 13, 2023 11:10:36 AM redVendedores.persistencia.ArchivoUtil guardarRegistroL
 INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-13
 nov 13, 2023 11:11:54 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
 INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: XimenaR,2023-11-13
+nov 13, 2023 12:17:07 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-13
+nov 13, 2023 7:10:20 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-13
