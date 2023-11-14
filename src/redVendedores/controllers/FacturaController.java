@@ -37,7 +37,7 @@ public class FacturaController {
     private ImageView flechaRegresar;
     
     
-    private int totalPagar;
+    private String totalPagar;
     
     private String metodo; 
     
@@ -45,17 +45,23 @@ public class FacturaController {
     
     private Integer numP;
     
-	public void setAplicacion(Aplicacion aplicacion, int totalPagar, String metodo, String nombre, Integer numP) {
+    private String usuario; 
+    
+    private String correo;
+    
+	public void setAplicacion(Aplicacion aplicacion, String totalPagar, String metodo, String nombre, Integer numP, String usuario, String correo) {
 		this.aplicacion = aplicacion;
 		this.totalPagar = totalPagar; 
 		this.metodo = metodo; 
 		this.nombre = nombre; 
 		this.numP = numP;
+		this.usuario= usuario; 
+		this.correo= correo;
 		
 		labelProducto.setText(nombre);
 		labelCantidadP.setText(numP.toString());
 		labelMetodoPago.setText(metodo);
-		labelTotalPagar.setText( Integer.toString(totalPagar));
+		labelTotalPagar.setText( totalPagar);
 		
 		LocalDate fechaActual = LocalDate.now();
 
@@ -70,21 +76,15 @@ public class FacturaController {
 	}
 	
 	private Aplicacion aplicacion;
-	
-	
-	
-	
-
     
     @FXML
     void flechaRegresarEvent(MouseEvent event) {
     	
-    	aplicacion.mostrarVentanaIniciarRed();
+    	aplicacion.mostrarVentanaPrincipal(usuario, correo);
 
     }
     
-    
-
+ 
 }
 
 	

@@ -31,9 +31,28 @@ public class Daviplata3Controller {
 	private Button btnDetalle;
 	
 	private Aplicacion aplicacion;
+	
+	private String precio; 
+	
+	private String fecha2; 
+	
+	private String usuario; 
+	
+	private String correo;
+	
+	private String producto; 
+	
+	private int num;
 
-	public void setAplicacion(Aplicacion aplicacion) {
+	public void setAplicacion(Aplicacion aplicacion, String precio, String fecha2, String usuario, String correo, String producto, int num) {
 		this.aplicacion = aplicacion;
+		this.precio= precio; 
+		this.fecha2= fecha2; 
+		this.usuario= usuario; 
+		this.correo= correo;
+		this.producto= producto; 
+		this.num= num;
+		
 		LocalDate fechaActual = LocalDate.now();
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("EEEE d 'de' MMMM 'de' yyyy", new Locale("es", "ES"));
         String fechaComoString = fechaActual.format(formato);
@@ -59,11 +78,13 @@ public class Daviplata3Controller {
 
 	@FXML
 	void mostrarDetalleEvent(ActionEvent event) {
-
+		aplicacion.mostrarVentanaDaviplata4(fecha2, precio, usuario, correo, producto, num);
 	}
 
 	@FXML
 	void salirEvent(ActionEvent event) {
+		
+		aplicacion.mostrarVentanaPrincipal(usuario, correo);
 
 	}
 

@@ -35,12 +35,19 @@ public class Nequi3Controller {
 	private String codigo;
 	
 	private String fecha;
+	
+	private String producto; 
+	
+	private int num;
 
-	public void setAplicacion(Aplicacion aplicacion, String precio, String correo, String usuario) {
+	public void setAplicacion(Aplicacion aplicacion, String precio, String correo, String usuario, String producto, int num) {
 		this.aplicacion = aplicacion;
 		this.precio= precio;
 		this.correo= correo;
 		this.usuario= usuario;
+		this.producto= producto; 
+		this.num= num; 
+		
 		LocalDate fechaActual = LocalDate.now();
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         fecha = fechaActual.format(formato);
@@ -59,7 +66,7 @@ public class Nequi3Controller {
 	@FXML
 	void pedirCodigoEvent(ActionEvent event) {
 		enviarCorreo(correo);
-		aplicacion.mostrarVentanaNequi4(precio,codigo, correo, usuario);
+		aplicacion.mostrarVentanaNequi4(precio,codigo, correo, usuario, producto, num);
 	}
 	
 	private String cadenaAleatoria() {

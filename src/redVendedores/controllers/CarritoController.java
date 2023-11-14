@@ -75,15 +75,15 @@ public class CarritoController {
 
 	@FXML
 	void ComprarEvent(ActionEvent event) {
-		aplicacion.mostrarVentanaCompra(usuario, correo, productos.size(), txtPrecio.getText());
+		aplicacion.mostrarVentanaCompra2(usuario, correo, productos.size(), txtPrecio.getText(), filtrarNombres());
 	}
 	
 	@FXML
 	void initialize() {
 		modelFactoryController = ModelFactoryController.getInstance();
 
-		comboBoxZonaEnvio.getItems().addAll("Centro", "Norte", "Sur");
-		comboBoxZonaEnvio.setOnAction(this::filtrarEnvio);
+//		comboBoxZonaEnvio.getItems().addAll("Centro", "Norte", "Sur");
+//		comboBoxZonaEnvio.setOnAction(this::filtrarEnvio);
 	}
 	
 	public void setAplicacion(Aplicacion aplicacion, String usuario, String correo) {
@@ -92,6 +92,7 @@ public class CarritoController {
 		this.correo = correo;
 		NroProductos.setText("("+modelFactoryController.obtenerNroPC(usuario)+")");
 		txtPrecio.setText(modelFactoryController.obtenerPrecio(usuario));
+		txtTotal.setText(txtPrecio.getText());
 		getListaProductosData();
 		productos.addAll(getListaProductosData());
 		System.out.println(productos);
@@ -142,33 +143,41 @@ public class CarritoController {
 		return modelFactoryController.obtenerProductosCarrito(usuario);
 	}
 	
-	public int filtrarEnvio(ActionEvent event) {
-		String selectedState = comboBoxZonaEnvio.getSelectionModel().getSelectedItem();
-		int precio= 0;
-		int total= 0;
-		if (selectedState != null) {
-			if (selectedState.equals("Centro")) {
-				precio= 5000;
-				txtValorEnvio.setText(Integer.toString(precio));
-				total= precio+(Integer.parseInt(txtPrecio.getText()));
-				txtTotal.setText(Integer.toString(total));
-			}
-			if (selectedState.equals("Sur")) {
-				precio= 4000;
-				txtValorEnvio.setText(Integer.toString(precio));
-				total= precio+(Integer.parseInt(txtPrecio.getText()));
-				txtTotal.setText(Integer.toString(total));
-			}
-			if (selectedState.equals("Norte")) {
-				precio=7000;
-				txtValorEnvio.setText(Integer.toString(precio));
-				total= precio+(Integer.parseInt(txtPrecio.getText()));
-				txtTotal.setText(Integer.toString(total));
-			}
+	public String filtrarNombres(){
+		String cadenaAux= ""; 
+		for (Producto producto : productos) {
+			cadenaAux= producto.getNombre()+", ";
 		}
-		return precio;
+		return cadenaAux;
 	}
-	
-	
+//	
+//	public int filtrarEnvio(ActionEvent event) {
+//		String selectedState = comboBoxZonaEnvio.getSelectionModel().getSelectedItem();
+//		int precio= 0;
+//		int total= 0;
+//		if (selectedState != null) {
+//			if (selectedState.equals("Centro")) {
+//				precio= 5000;
+//				txtValorEnvio.setText(Integer.toString(precio));
+//				total= precio+(Integer.parseInt(txtPrecio.getText()));
+//				txtTotal.setText(Integer.toString(total));
+//			}
+//			if (selectedState.equals("Sur")) {
+//				precio= 4000;
+//				txtValorEnvio.setText(Integer.toString(precio));
+//				total= precio+(Integer.parseInt(txtPrecio.getText()));
+//				txtTotal.setText(Integer.toString(total));
+//			}
+//			if (selectedState.equals("Norte")) {
+//				precio=7000;
+//				txtValorEnvio.setText(Integer.toString(precio));
+//				total= precio+(Integer.parseInt(txtPrecio.getText()));
+//				txtTotal.setText(Integer.toString(total));
+//			}
+//		}
+//		return precio;
+//	}
+//	
+//	
 
 }

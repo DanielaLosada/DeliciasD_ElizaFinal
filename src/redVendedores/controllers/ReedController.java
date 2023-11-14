@@ -143,8 +143,12 @@ public class ReedController {
 	void agregarCEvent(ActionEvent event) {
 		Producto producto = new Producto();
 		producto= productoSeleccionado;
-		modelFactoryController.agregarAlCarrito(producto, usuario);
-		mostrarMensajeInformacion("Se ha agregado el producto al carrito");
+		if(mostrarMensajeInformacion("¿Deseas agregar el producto al carrito?")){
+			modelFactoryController.agregarAlCarrito(producto, usuario);
+			JOptionPane.showMessageDialog(null, "si'");
+		}else{
+			JOptionPane.showMessageDialog(null, "No se agrego na'");
+		}
 		txtNroProductosC.setText("("+modelFactoryController.obtenerNroPC(usuario)+")");
 	}
 
@@ -168,7 +172,7 @@ public class ReedController {
 //		enviarCorreo(correo);
 //		aplicacion.mostrarVentanaFactura(totalPrecio, opcionSeleccionada, productoSeleccionado.getNombre(), num);
 		
-		aplicacion.mostrarVentanaCompra(usuario, correo, num, Integer.toString(totalPrecio));
+		aplicacion.mostrarVentanaCompra(usuario, correo, num, Integer.toString(totalPrecio), productoSeleccionado.getNombre());
 	}
 
 	private void enviarCorreo(String destinatario) {

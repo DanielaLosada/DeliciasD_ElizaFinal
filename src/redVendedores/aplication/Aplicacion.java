@@ -10,6 +10,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import redVendedores.controllers.CarritoController;
+import redVendedores.controllers.Compra2Controller;
 import redVendedores.controllers.CompraController;
 import redVendedores.controllers.Daviplata2Controller;
 import redVendedores.controllers.Daviplata3Controller;
@@ -218,7 +219,7 @@ import redVendedores.model.Red;
 		}
 	}
 	
-	public void mostrarVentanaFactura(int totalPagar, String metodo, String nombre, Integer numP){
+	public void mostrarVentanaFactura(String totalPagar, String metodo, String nombre, Integer numP, String usuario, String correo){
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Aplicacion.class.getResource("../views/Factura.fxml"));
@@ -226,7 +227,7 @@ import redVendedores.model.Red;
 			AnchorPane rootLayout = (AnchorPane)loader.load();
 
 			FacturaController loginAdministradorController = loader.getController();
-			loginAdministradorController.setAplicacion(this, totalPagar, metodo, nombre, numP);
+			loginAdministradorController.setAplicacion(this, totalPagar, metodo, nombre, numP, usuario, correo);
 
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
@@ -295,7 +296,7 @@ import redVendedores.model.Red;
 		}
 	}
 	
-	public void mostrarVentanaCompra(String usuario, String correo, int num, String precio){
+	public void mostrarVentanaCompra(String usuario, String correo, int num, String precio, String producto){
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Aplicacion.class.getResource("../views/Compra.fxml"));
@@ -303,7 +304,7 @@ import redVendedores.model.Red;
 			AnchorPane rootLayout = (AnchorPane)loader.load();
 
 			CompraController compraController = loader.getController();
-			compraController.setAplicacion(this, usuario, correo, num, precio);
+			compraController.setAplicacion(this, usuario, correo, num, precio,producto);
 
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
@@ -314,7 +315,26 @@ import redVendedores.model.Red;
 		}
 	}
 	
-	public void mostrarVentanaPagoTarjetas(){
+	public void mostrarVentanaCompra2(String usuario, String correo, int num, String precio, String producto){
+		try {
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(Aplicacion.class.getResource("../views/Compra2.fxml"));
+
+			AnchorPane rootLayout = (AnchorPane)loader.load();
+
+			Compra2Controller compraController = loader.getController();
+			compraController.setAplicacion(this, usuario, correo, num, precio,producto);
+
+			Scene scene = new Scene(rootLayout);
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	public void mostrarVentanaPagoTarjetas(String producto, String precio, int num, String correo, String usuario){
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Aplicacion.class.getResource("../views/PagoTarjetas.fxml"));
@@ -322,7 +342,7 @@ import redVendedores.model.Red;
 			AnchorPane rootLayout = (AnchorPane)loader.load();
 
 			PagoTarjetasController pagoTarjetasController = loader.getController();
-			pagoTarjetasController.setAplicacion(this);
+			pagoTarjetasController.setAplicacion(this, producto, precio, num, correo, usuario);
 
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
@@ -333,7 +353,7 @@ import redVendedores.model.Red;
 		}
 	}
 	
-	public void mostrarVentanaPagoPSE(String precio, String correo, String usuario){
+	public void mostrarVentanaPagoPSE(String precio, String correo, String usuario, String producto, int num){
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Aplicacion.class.getResource("../views/pagoPSE.fxml"));
@@ -341,7 +361,7 @@ import redVendedores.model.Red;
 			AnchorPane rootLayout = (AnchorPane)loader.load();
 
 			PagoPSEController pagoPSEController = loader.getController();
-			pagoPSEController.setAplicacion(this, precio,correo, usuario);
+			pagoPSEController.setAplicacion(this, precio,correo, usuario, producto, num);
 
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
@@ -352,7 +372,7 @@ import redVendedores.model.Red;
 		}
 	}
 	
-	public void mostrarVentanaDaviplata2(String precio, String correo, String usuario){
+	public void mostrarVentanaDaviplata2(String precio, String correo, String usuario, String codigo, String producto, int num){
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Aplicacion.class.getResource("../views/Daviplata2.fxml"));
@@ -360,7 +380,7 @@ import redVendedores.model.Red;
 			AnchorPane rootLayout = (AnchorPane)loader.load();
 
 			Daviplata2Controller daviplata2Controller = loader.getController();
-			daviplata2Controller.setAplicacion(this,precio, correo, usuario);
+			daviplata2Controller.setAplicacion(this,precio, correo, usuario, codigo, producto, num);
 
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
@@ -371,7 +391,7 @@ import redVendedores.model.Red;
 		}
 	}
 	
-	public void mostrarVentanaDaviplata3(){
+	public void mostrarVentanaDaviplata3(String precio, String fecha2, String usuario, String correo, String producto, int num){
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Aplicacion.class.getResource("../views/Daviplata3.fxml"));
@@ -379,7 +399,7 @@ import redVendedores.model.Red;
 			AnchorPane rootLayout = (AnchorPane)loader.load();
 
 			Daviplata3Controller daviplata3Controller = loader.getController();
-			daviplata3Controller.setAplicacion(this);
+			daviplata3Controller.setAplicacion(this, precio, fecha2, usuario, correo, producto, num);
 
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
@@ -390,7 +410,7 @@ import redVendedores.model.Red;
 		}
 	}
 	
-	public void mostrarVentanaDaviplata4(){
+	public void mostrarVentanaDaviplata4(String fecha2, String precio, String usuario, String correo, String producto, int num){
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Aplicacion.class.getResource("../views/Daviplata4.fxml"));
@@ -398,7 +418,7 @@ import redVendedores.model.Red;
 			AnchorPane rootLayout = (AnchorPane)loader.load();
 
 			Daviplata4Controller daviplata4Controller = loader.getController();
-			daviplata4Controller.setAplicacion(this);
+			daviplata4Controller.setAplicacion(this, fecha2, precio, usuario, correo, producto, num);
 
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
@@ -409,7 +429,7 @@ import redVendedores.model.Red;
 		}
 	}
 	
-	public void mostrarVentanaNequi2(String precio, String correo, String usuario){
+	public void mostrarVentanaNequi2(String precio, String correo, String usuario, String producto, int num){
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Aplicacion.class.getResource("../views/Nequi2.fxml"));
@@ -417,7 +437,7 @@ import redVendedores.model.Red;
 			AnchorPane rootLayout = (AnchorPane)loader.load();
 
 			Nequi2Controller nequi2Controller = loader.getController();
-			nequi2Controller.setAplicacion(this, precio,correo, usuario);
+			nequi2Controller.setAplicacion(this, precio,correo, usuario, producto, num);
 
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
@@ -428,7 +448,7 @@ import redVendedores.model.Red;
 		}
 	}
 	
-	public void mostrarVentanaNequi3(String precio, String correo, String usuario){
+	public void mostrarVentanaNequi3(String precio, String correo, String usuario, String producto, int num){
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Aplicacion.class.getResource("../views/Nequi3.fxml"));
@@ -436,7 +456,7 @@ import redVendedores.model.Red;
 			AnchorPane rootLayout = (AnchorPane)loader.load();
 
 			Nequi3Controller nequi3Controller = loader.getController();
-			nequi3Controller.setAplicacion(this,precio, correo, usuario);
+			nequi3Controller.setAplicacion(this,precio, correo, usuario, producto, num);
 
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
@@ -447,7 +467,7 @@ import redVendedores.model.Red;
 		}
 	}
 	
-	public void mostrarVentanaNequi4(String precio, String codigo, String correo, String usuario){
+	public void mostrarVentanaNequi4(String precio, String codigo, String correo, String usuario, String producto, int num){
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Aplicacion.class.getResource("../views/Nequi4.fxml"));
@@ -455,7 +475,7 @@ import redVendedores.model.Red;
 			AnchorPane rootLayout = (AnchorPane)loader.load();
 
 			Nequi4Controller nequi4Controller = loader.getController();
-			nequi4Controller.setAplicacion(this,precio,codigo, correo, usuario);
+			nequi4Controller.setAplicacion(this,precio,codigo, correo, usuario, producto, num);
 
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
@@ -466,7 +486,7 @@ import redVendedores.model.Red;
 		}
 	}
 	
-	public void mostrarVentanaNequi5(String precio){
+	public void mostrarVentanaNequi5(String precio, String usuario, String correo, String producto, int num){
 		try {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Aplicacion.class.getResource("../views/Nequi5.fxml"));
@@ -474,7 +494,7 @@ import redVendedores.model.Red;
 			AnchorPane rootLayout = (AnchorPane)loader.load();
 
 			Nequi5Controller nequi5Controller = loader.getController();
-			nequi5Controller.setAplicacion(this,precio);
+			nequi5Controller.setAplicacion(this,precio, usuario, correo, producto, num);
 
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);

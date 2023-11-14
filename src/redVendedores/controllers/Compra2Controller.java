@@ -1,7 +1,5 @@
 package redVendedores.controllers;
 
-import java.util.ArrayList;
-
 import javax.swing.JOptionPane;
 
 import javafx.event.ActionEvent;
@@ -16,7 +14,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import redVendedores.aplication.Aplicacion;
 
-public class CompraController {
+public class Compra2Controller {
 
     @FXML
     private ImageView flechaRegresar1;
@@ -106,7 +104,7 @@ public class CompraController {
 
     @FXML
     void flechaRegresarEvent(MouseEvent event) {
-    	aplicacion.mostrarVentanaCarrito(usuario, correo);
+    	aplicacion.mostrarVentanaPrincipal(usuario, correo);
     }
     
     @FXML

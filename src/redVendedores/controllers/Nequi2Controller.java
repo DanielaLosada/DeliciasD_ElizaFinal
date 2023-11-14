@@ -32,12 +32,19 @@ public class Nequi2Controller {
 	private String correo;
 	
 	private String usuario;
+	
+	private String producto; 
+	
+	private int num; 
 
-	public void setAplicacion(Aplicacion aplicacion, String precio, String correo, String usuario) {
+	public void setAplicacion(Aplicacion aplicacion, String precio, String correo, String usuario, String producto, int num) {
 		this.aplicacion = aplicacion;
 		this.precio= precio;
 		this.correo= correo;
 		this.usuario= usuario;
+		this.producto= producto;
+		this.num= num; 
+		
 		referencia.setText(generarReferencia());
 		valor.setText(precio);
 		nroReferencia.setText(generarNroReferencia());
@@ -66,7 +73,7 @@ public class Nequi2Controller {
 
 	@FXML
 	void pagarEvent(ActionEvent event) {
-		aplicacion.mostrarVentanaNequi3(precio, correo, usuario);
+		aplicacion.mostrarVentanaNequi3(precio, correo, usuario, producto, num);
 	}
 
 }

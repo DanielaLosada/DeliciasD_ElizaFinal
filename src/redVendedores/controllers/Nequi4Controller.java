@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
+import javax.swing.JOptionPane;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -32,13 +34,20 @@ public class Nequi4Controller {
 	private String correo; 
 	private String usuario;
 	private String fecha;
+	
+	private String producto; 
+	
+	private int num;
 
-	public void setAplicacion(Aplicacion aplicacion, String precio, String codigo, String correo, String usuario) {
+	public void setAplicacion(Aplicacion aplicacion, String precio, String codigo, String correo, String usuario, String producto, int num) {
 		this.aplicacion = aplicacion;
 		this.precio= precio;
 		this.codigo= codigo;
 		this.correo= correo; 
 		this.usuario= usuario;
+		this.producto= producto; 
+		this.num= num; 
+		
 		LocalDate fechaActual = LocalDate.now();
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         fecha = fechaActual.format(formato);
@@ -55,7 +64,15 @@ public class Nequi4Controller {
 
 	@FXML
 	void seguirEvent(ActionEvent event) {
-		aplicacion.mostrarVentanaNequi5(precio);
+		if(txtCodigo.getText()!=null){
+			if(txtCodigo.getText().equals(codigo)){
+				aplicacion.mostrarVentanaNequi5(precio, usuario, correo, producto, num);
+			}else{
+				JOptionPane.showMessageDialog(null, "Código incorrecto");
+			}
+		}else{
+			JOptionPane.showMessageDialog(null, "Debe digitar el código para poder continuar");
+		}
 	}
 
 }

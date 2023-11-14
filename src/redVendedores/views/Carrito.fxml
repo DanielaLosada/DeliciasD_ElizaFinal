@@ -20,7 +20,7 @@
             <Image url="@../../imagenes/Presentación%20Diapositiva%20Marca%20Creativa%20Doodle%20Acuarela%20Colores%20Pasteles%20(1).png" />
          </image>
       </ImageView>
-      <ScrollPane fx:id="scrollCarrito" layoutY="74.0" prefHeight="703.0" prefWidth="478.0" style="-fx-background-color: rgba(0,0,0,0); -fx-background-radius: 30 30 30 30;">
+      <ScrollPane fx:id="scrollCarrito" layoutY="74.0" prefHeight="589.0" prefWidth="478.0" style="-fx-background-color: rgba(0,0,0,0); -fx-background-radius: 30 30 30 30;">
          <content>
             <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
                <rowConstraints>

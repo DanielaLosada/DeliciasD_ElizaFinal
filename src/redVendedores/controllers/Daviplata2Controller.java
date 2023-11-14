@@ -14,6 +14,9 @@ import javafx.util.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
+
+import javax.swing.JOptionPane;
+
 import redVendedores.aplication.Aplicacion;
 
 public class Daviplata2Controller {
@@ -42,12 +45,21 @@ public class Daviplata2Controller {
 	private String usuario;
 	
 	private String fecha2;
+	
+	private String codigo;
+	
+	private String producto; 
+	
+	private int num;
 
-	public void setAplicacion(Aplicacion aplicacion, String precio, String correo, String usuario) {
+	public void setAplicacion(Aplicacion aplicacion, String precio, String correo, String usuario, String codigo, String producto, int num) {
 		this.aplicacion = aplicacion;
 		this.precio= precio;
 		this.correo= correo;
 		this.usuario= usuario;
+		this.codigo= codigo;
+		this.producto= producto; 
+		this.num= num;
 		
 		LocalDate fechaActual = LocalDate.now();
         DateTimeFormatter formato = DateTimeFormatter.ofPattern("EEEE d 'de' MMMM 'de' yyyy", new Locale("es", "ES"));
@@ -65,7 +77,15 @@ public class Daviplata2Controller {
 
 	@FXML
 	void efectuarEvent(ActionEvent event) {
-
+		if(txtCodigo.getText()!=null){
+			if(txtCodigo.getText().equals(codigo)){
+				aplicacion.mostrarVentanaDaviplata3(precio, fecha2, usuario, correo, producto, num);
+			}else{
+				JOptionPane.showMessageDialog(null, "Código incorrecto");
+			}
+		}else{
+			JOptionPane.showMessageDialog(null, "Debe digitar el código para poder continuar");
+		}
 	}
 	
 	@FXML

@@ -32,7 +32,7 @@
                </image>
             </ImageView>
          </children></AnchorPane>
-      <AnchorPane layoutX="468.0" layoutY="108.0" prefHeight="258.0" prefWidth="267.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30 30 30 30; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);">
+      <AnchorPane layoutX="469.0" layoutY="108.0" prefHeight="258.0" prefWidth="267.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30 30 30 30; -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);">
          <children>
             <Text fill="#440404" layoutX="67.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Resumen de compra ">
                <font>
@@ -155,12 +155,12 @@
             <Image url="@../../imagenes/banco.png" />
          </image>
       </ImageView>
-      <Button fx:id="btnContinuar" layoutX="575.0" layoutY="456.0" mnemonicParsing="false" onAction="#ContinuarEvent" prefHeight="36.0" prefWidth="109.0" style="-fx-background-color: #440404; -fx-background-radius: 30 30 30 30;" text="Continuar" textFill="WHITE">
+      <Button fx:id="btnContinuar" layoutX="582.0" layoutY="691.0" mnemonicParsing="false" onAction="#ContinuarEvent" prefHeight="36.0" prefWidth="109.0" style="-fx-background-color: #440404; -fx-background-radius: 30 30 30 30;" text="Continuar" textFill="WHITE">
          <font>
             <Font name="Tw Cen MT" size="19.0" />
          </font>
       </Button>
-      <ImageView fitHeight="38.0" fitWidth="43.0" layoutX="665.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="38.0" fitWidth="43.0" layoutX="672.0" layoutY="708.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../imagenes/clicker-del-mouse.png" />
          </image>
