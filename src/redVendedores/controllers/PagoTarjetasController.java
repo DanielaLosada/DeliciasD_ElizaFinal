@@ -116,8 +116,8 @@ public class PagoTarjetasController {
 			mensaje.setFrom(new InternetAddress(destinatario));
 			mensaje.setRecipients(Message.RecipientType.TO, InternetAddress.parse(destinatario));
 			mensaje.setSubject("¡Compra exitosa! - Delicias D' Eliza");
-			mensaje.setText("¡Se ha realizado con exito tu compra!" + "\n" + "Tu pedido correspondiente a: "
-					+ "\n" + "Con el valor de: " + precio + "\n"
+			mensaje.setText("¡Se ha realizado con exito tu compra!" + "\n" + "Tu pedido correspondiente"
+					+ "\n" + "con el valor de: " + precio + "\n"
 					+ "Esta en proceso de empaquetado y proximo a ser despachado a su direccion de residencia" + "\n"
 					+ "¡GRACIAS POR TU COMPRA!");
 

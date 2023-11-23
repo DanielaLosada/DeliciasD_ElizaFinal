@@ -408,3 +408,23 @@ nov 14, 2023 12:11:57 AM redVendedores.persistencia.ArchivoUtil guardarRegistroL
 ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-11-14
 nov 14, 2023 12:12:04 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
 INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: SebastianR,2023-11-14
+nov 14, 2023 9:57:58 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-14
+nov 14, 2023 10:04:29 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-14
+nov 14, 2023 10:09:19 AM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-14
+nov 18, 2023 12:28:07 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-18
+nov 22, 2023 1:32:08 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+ADVERTENCIA: inicio Sesion,Error de sesion del usuario,2023-11-22
+nov 22, 2023 1:32:15 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-22
+nov 22, 2023 1:47:07 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-22
+nov 22, 2023 1:47:48 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-22
+nov 22, 2023 10:41:21 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-22
+nov 22, 2023 11:01:05 PM redVendedores.persistencia.ArchivoUtil guardarRegistroLog
+INFORMACIÓN: inicio Sesion,Inicio de sesion del usuario: DanielaL,2023-11-22
