@@ -54,7 +54,6 @@
                   <Image url="@../../imagenes/cerrar-sesion.png" />
                </image>
             </ImageView>
-            <ImageView fx:id="foto" fitHeight="51.0" fitWidth="54.0" layoutX="288.0" layoutY="78.0" onMouseClicked="#usuarioEvent" pickOnBounds="true" preserveRatio="true" styleClass="image-frame" />
             <ScrollPane fx:id="scroll" layoutX="471.0" layoutY="181.0" prefHeight="1103.0" prefWidth="775.0" style="-fx-background-color: rgba(0,0,0,0); -fx-background-radius: 30 30 30 30;">
                <content>
                   <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
